@@ -1,0 +1,30 @@
+<!-- templates/about.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>About Us</h1>
+        <nav>
+            <a href="/">Home</a> |
+            <a href="/about">About</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>About Our Flask App</h2>
+        <p>This is a simple app built with Flask!</p>
+    </main>
+
+    <footer>
+        <p>Flask App &copy; 2024</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
